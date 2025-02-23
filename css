@@ -1,6 +1,7 @@
 @media (min-width: 375px) {
     .review {
         background-color: #FBFBFB;
+        padding: 40px 0;
     }
 
     .container-review {
@@ -27,6 +28,7 @@
         letter-spacing: -0.01em;
         line-height: 1.08;
         text-transform: uppercase;
+        text-align: left;
     }
 
     .review-part {
@@ -39,6 +41,7 @@
         font-size: 14px;
         /* line-height: 20px; */
         line-height: 1.43;
+        text-align: left;
     }
 
     .review-team-list {
@@ -47,14 +50,18 @@
         gap: 8px;
         border: 1px solid rgba(221, 221, 221, 0.8);
         background: rgba(255, 255, 255, 0.9);
-        border-width: 1px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
     .review-team {
         list-style: none;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
         gap: 20px;
     }
 
@@ -63,6 +70,18 @@
         height: 56px;
         border-radius: 50%;
     }
+    .review-team-name { 
+        font-weight: bold; 
+        font-size: 16px; 
+        line-height: 1.2; 
+        text-align: center; 
+        color: #141414; } 
+    
+    .review-team-p { 
+        font-size: 14px; 
+        line-height: 1.43; 
+        text-align: center; 
+        color: #858585; }
 }
 
 
@@ -71,8 +90,6 @@
         max-width: 768px;
         padding: 0 32px;
         text-align: left;
-        align-items: flex-start;
-
     }
 
     .review-title {
@@ -81,9 +98,6 @@
         line-height: 64px;
     }
 
-    .review-title .review-part {
-        color: #576F35;
-    }
 
     .review-description {
         font-weight: 500;
@@ -91,23 +105,20 @@
         line-height: 20px;
     }
 
-    .review-team-name,
-    .review-team-p{
-        text-align: left;
-    }
-
     .review-team-list {
         width: calc(50% - 32px)
         border-radius: 24px;
         border-width: 1px;
         padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9); 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь для картки */
     }
 
 
     .review-team {
         flex-wrap: wrap;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         gap: 32px;
     }
 }
@@ -119,20 +130,11 @@
         text-align: left;
     }
 
-    .review {
-        padding: 100px;
-        font-family: Arial, sans-serif;
-    }
-
     .review-title {
         font-weight: 600;
         font-size: 64px;
         line-height: 64px;
         text-align: left; 
-    }
-
-    .review-title .review-part {
-        color: #576F35;
     }
 
     .review-description {
@@ -141,58 +143,24 @@
         line-height: 20px;
     }
 
-    .review-team {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 24px;
-    }
-    
      .review-team-list {
         width: calc((100% - 40px) / 3);
+        padding: 20px; 
+        border-radius: 24px; 
+        border: 1px solid #ddd; 
+        background: rgba(255, 255, 255, 0.9); 
+        box-shadow: 0 4px8px rgba(0, 0, 0, 0.1);
     }
 
-    .review-team-name {
-        font-family: Inter Tight;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 20px;
-        letter-spacing: -1.5%;
-        text-align: left;
-    }
-
-    .review-team-p {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: 0%;
-        text-align: left;
-    }
-
-    .review-team-list {
-        width: 100%;
-        max-width: 344px;
-        padding: 20px;
-        border-radius: 24px;
-        border: 1px solid #ddd;
-        text-align: center;
-        background: transparent;
-    }
-
-    .review-team-list img {
-        width: 56px;
-        height: 56px;
-        border-radius: 50%;
-    }
-
-    .review-team-content h3 {
-        font-size: 16px;
-        font-weight: bold;
-        margin: 10px 0;
-    }
-
-    .review-team-content p {
-        color: #858585;
-        font-size: 14px;
-    }
+    .review-team { 
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+        gap: 24px;
+    } 
+    
+    .review-team-name, 
+    .review-team-p { 
+        text-align: center; 
+    } 
 }
