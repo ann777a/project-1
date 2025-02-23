@@ -1,17 +1,11 @@
 @media (min-width: 375px) {
-    .rewiew-team-list: {
-        width: 100%;
-    }
-    
     .review {
         background-color: #FBFBFB;
-
     }
 
     .container-review {
         /* min-width: 320px; */
-        max-width: 100%;
-        width: 100%;
+        max-width: 375px;
         margin: 0 auto;
         padding: 0 20px;
         display: flex;
@@ -28,7 +22,7 @@
     }
 
     .review-title {
-        color: 141414_1;
+        color: #141414;
         font-size: 48px;
         letter-spacing: -0.01em;
         line-height: 1.08;
@@ -40,39 +34,26 @@
     }
 
     .review-description {
-        color: 141414_1;
+        color: #141414;
         font-weight: 500;
         font-size: 14px;
         /* line-height: 20px; */
         line-height: 1.43;
     }
 
-
-
     .review-team-list {
-        width: 335px;
-        height: 228px;
-        padding-top: 40px;
-        padding-right: 20px;
-        padding-bottom: 80px;
-        padding-left: 16px;
+        width: 100%;
+        padding: 20px;
         gap: 8px;
         border: 1px solid rgba(221, 221, 221, 0.8);
         background: rgba(255, 255, 255, 0.9);
         border-width: 1px;
     }
 
-    .rewiew-team-list: {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        max-width: 344px;
-    }
-
     .review-team {
         list-style: none;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
     }
@@ -86,9 +67,6 @@
 
 
 @media (min-width: 768px) {
-    .review-team-list {
-        width: calc(50% - 20px)
-    }
     .container-review {
         max-width: 768px;
         padding: 0 32px;
@@ -111,7 +89,6 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 20px;
-        letter-spacing: 0%;
     }
 
     .review-team-name,
@@ -120,20 +97,15 @@
     }
 
     .review-team-list {
-        width: 340px;
-        height: 248px;
-        gap: 8px;
+        width: calc(50% - 32px)
         border-radius: 24px;
         border-width: 1px;
         padding: 20px;
     }
 
-    .rewiew-team-list:nth-child(2) {
-        display: inline-block;
-    }
 
     .review-team {
-        list-style: none;
+        flex-wrap: wrap;
         display: flex;
         justify-content: center;
         gap: 32px;
@@ -141,16 +113,10 @@
 }
 
 @media only screen and (min-width: 1280px) {
-    .review-team-list {
-        width: calc((100% - 40px) / 3);
-    }
-
     .container-review {
         max-width: 1280px;
         padding: 0 100px;
         text-align: left;
-        flex-direction: column;
-        align-items: flex-start;
     }
 
     .review {
@@ -162,11 +128,7 @@
         font-weight: 600;
         font-size: 64px;
         line-height: 64px;
-        width: 100%;
-        width: auto;
-        text-align: left;
-        display: block;
-        margin: 0;  
+        text-align: left; 
     }
 
     .review-title .review-part {
@@ -174,21 +136,20 @@
     }
 
     .review-description {
-        font-family: Inter Tight;
         font-weight: 500;
         font-size: 16px;
         line-height: 20px;
-        letter-spacing: 0%;
-        display: block;
-        text-align: left;
-        margin-top: 10px;
     }
 
     .review-team {
-        list-style: none;
         display: flex;
-        justify-content: center;
-        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 24px;
+    }
+    
+     .review-team-list {
+        width: calc((100% - 40px) / 3);
     }
 
     .review-team-name {
