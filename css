@@ -106,7 +106,7 @@
     }
 
     .review-team-list {
-        width: calc(50% - 32px)
+        width: calc(50% - 32px);
         border-radius: 24px;
         border-width: 1px;
         padding: 20px;
