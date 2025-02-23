@@ -32,7 +32,7 @@
     }
 
     .review-part {
-        color: 576F35_1;
+        color: #576F35;
     }
 
     .review-description {
@@ -64,7 +64,7 @@
         justify-content: center;
         gap: 20px;
         width: 100%
-        max-width: 344 px;
+        max-width: 344px;
     }
 
     .review-team {
@@ -84,7 +84,7 @@
 
 @media (min-width: 768px) {
     .container-review {
-        max-width: 768 px;
+        max-width: 768px;
         padding: 0 32px;
         text-align: left;
         align-items: flex-start;
@@ -98,7 +98,7 @@
     }
 
     .review-title .review-part {
-        color: 576F35_1;
+        color: #576F35;
     }
 
     .review-description {
@@ -155,11 +155,11 @@
         width: auto;
         text-align: left;
         display: block;
-        margin: 0;
+        margin: 0;  
     }
 
     .review-title .review-part {
-        color: 576F35_1;
+        color: #576F35;
     }
 
     .review-description {
@@ -224,7 +224,7 @@
     }
 
     .review-team-content p {
-        color: 858585_1;
+        color: #858585;
         font-size: 14px;
     }
 }
